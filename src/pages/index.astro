@@ -1,0 +1,122 @@
+---
+import Layout from "../layouts/Layout.astro";
+import SubTitle from "../components/SubTitle.astro";
+import Separator from "../components/Separator.astro";
+import ItemList from "../components/ItemList.astro";
+---
+
+<Layout title="Recipe Page">
+  <main class="min-h-screen lg:w-2/5 md:w-3/5 w-full m-auto p-8 pb-32">
+    <header>
+      <img src="/image-omelette.jpeg" class="rounded-lg object-contain" />
+    </header>
+    <section class="mt-10">
+      <h1
+        class="font-young lg:text-[46px] md:text-[36px] font-semibold text-black"
+      >
+        Simple Omelette Recipe
+      </h1>
+      <p class="font-outfit mt-2 text-gray-600">
+        An easy and quick dish, perfect for any meal. This classic omelette
+        combines beaten eggs cooked to perfection, optionally filled with your
+        choice of cheese, vegetables, or meats.
+      </p>
+    </section>
+    <section class="bg-red-50 mt-10 p-10 rounded-lg">
+      <h2 class="font-outfit text-[#61263f] text-[20px] mb-3 font-bold">
+        Preparation time
+      </h2>
+      <ItemList title="Total:" description="Approximately 10 minutes" />
+      <ItemList title="Preparation:" description="5 minutes" />
+      <ItemList title="Cooking:" description="5 minutes" />
+    </section>
+
+    <section class="mt-10">
+      <SubTitle text="Ingredients" />
+      <li class="text-gray-700 font-outfit text-md mb-2 font-normal">
+        2-3 large eggs
+      </li>
+      <li class="text-gray-700 font-outfit text-md mb-2 font-normal">
+        Salt, to taste
+      </li>
+      <li class="text-gray-700 font-outfit text-md mb-2 font-normal">
+        Pepper, to taste
+      </li>
+      <li class="text-gray-700 font-outfit text-md mb-2 font-normal">
+        1 tablespoon of butter or oil
+      </li>
+      <li class="text-gray-700 font-outfit text-md mb-2 font-normal">
+        Optional fillings: cheese, diced vegetables, cooked meats, herbs
+      </li>
+    </section>
+
+    <Separator />
+
+    <section>
+      <SubTitle text="Instructions" />
+      <ItemList
+        title="Beat the eggs:"
+        description="In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture."
+      />
+      <ItemList
+        title="Heat the pan:"
+        description="Place a non-stick frying pan over medium heat and add butter or oil."
+      />
+      <ItemList
+        title="Cook the omelette:"
+        description="Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface."
+      />
+      <ItemList
+        title="Add fillings (optional):"
+        description="When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette."
+      />
+      <ItemList
+        title="Fold and serve:"
+        description="As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate."
+      />
+      <ItemList
+        title="Enjoy:"
+        description="Serve hot, with additional salt and pepper if needed."
+      />
+    </section>
+
+    <Separator />
+
+    <section>
+      <SubTitle text="Nutrition" />
+      <p class="font-outfit mt-2 text-gray-600">
+        The table below shows nutritional values per serving without the
+        additional fillings.
+      </p>
+      <div class="mt-8">
+        <div class="flex flex-row md:px-8 px-2">
+          <p class="flex-1 font-outfit text-lg text-gray-600">Calories</p>
+          <p class="flex-1 font-outfit text-lg font-semibold text-[#814b36]">
+            277kcal
+          </p>
+        </div>
+        <div class="h-[1px] bg-[#e3e3e3] my-4"></div>
+        <div class="flex flex-row md:px-8 px-2">
+          <p class="flex-1 font-outfit text-lg text-gray-600">Carbs</p>
+          <p class="flex-1 font-outfit text-lg font-semibold text-[#814b36]">
+            0g
+          </p>
+        </div>
+        <div class="h-[1px] bg-[#e3e3e3] my-4"></div>
+        <div class="flex flex-row md:px-8 px-2">
+          <p class="flex-1 font-outfit text-lg text-gray-600">Protein</p>
+          <p class="flex-1 font-outfit text-lg font-semibold text-[#814b36]">
+            20g
+          </p>
+        </div>
+        <div class="h-[1px] bg-[#e3e3e3] my-4"></div>
+        <div class="flex flex-row md:px-8 px-2">
+          <p class="flex-1 font-outfit text-lg text-gray-600">Fat</p>
+          <p class="flex-1 font-outfit text-lg font-semibold text-[#814b36]">
+            22g
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+</Layout>
